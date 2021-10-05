@@ -1,0 +1,61 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  margin: 6px 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: solid var(--deleteColor) 2px;
+
+  &.primary {
+    background-color: var(--deleteColor);
+    color: white;
+  }
+
+  &.secondary {
+    background-color: white;
+    color: var(--deleteColor);
+  }
+}
+
+.action {
+  display: inline-block;
+  padding: 0 18px;
+}
+
+.dialog {
+  background-color: white;
+  color: var(--backgroundColor);
+  border-radius: 24px;
+  border: solid var(--deleteColor) 6px;
+  padding: 12px 24px;
+  max-width: 400px;
+  text-align: center;
+
+  .title {
+    color: var(--deleteColor);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 6px 0;
+  }
+}
+
+.animated-in .content {
+  animation: fadeIn 0.3s ease-out both;
+}
+
+@for $i from 1 to 5 {
+  .animated-in .content:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.12}s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
