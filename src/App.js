@@ -1,14 +1,20 @@
-import './App.scss'
-import { Component } from 'react'
-import { Counter } from './components/Counter/Counter'
-// function App() {
+import './App.scss';
+import { Component } from 'react';
+import { DeleteButton } from './components/Widgets/RemoveItem';
+import { Counter } from './components/Counter/Counter';
 
-//   return <div className="App"></div>
-// }
+const text = {
+  title: 'title-1',
+  content: 'content-1',
+  backBtn: 'go back',
+  deleteBtn: 'delete',
+};
+
 class App extends Component {
   state = {
     counter: 0,
-  }
+    isOpen: false,
+  };
 
   handleDecrement = () => {
     // просто перепишем текущий стейт
@@ -22,38 +28,36 @@ class App extends Component {
     //   }
     // })
     // или короче
-    this.setState((prevState) => ({
-      counter: prevState.counter - 1,
-    }))
-  }
+    if (this.state.counter > 0) {
+      this.setState(prevState => ({
+        counter: prevState.counter - 1,
+      }));
+    }
+  };
   handleIncrement = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       counter: prevState.counter + 1,
-    }))
-  }
+    }));
+  };
 
   render() {
-    console.log(this.props)
-    const { counter } = this.state
-    const { handleDecrement, handleIncrement } = this
+    const { counter, isOpen } = this.state;
+    const { handleDecrement, handleIncrement } = this;
     return (
       <div className="App">
         <h1>FE-35</h1>
+        <DeleteButton isOpen={!isOpen} text={text} />
+        <DeleteButton isOpen={isOpen} />
         <Counter
           counter={counter}
           handleDecrement={handleDecrement}
           handleIncrement={handleIncrement}
         />
-        {/* <div className="counter">
-          <button onClick={handleDecrement}>-</button>
-          <p>{counter}</p>
-          <button onClick={handleIncrement}>+</button>
-        </div> */}
       </div>
-    )
+    );
   }
 }
-export default App
+export default App;
 
 // click => onClick
 // submit => onSubmit
