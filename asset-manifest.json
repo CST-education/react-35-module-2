@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-35-module-2/static/css/main.11a7c319.chunk.css",
+    "main.js": "/react-35-module-2/static/js/main.2a36b42e.chunk.js",
+    "main.js.map": "/react-35-module-2/static/js/main.2a36b42e.chunk.js.map",
+    "runtime-main.js": "/react-35-module-2/static/js/runtime-main.c66f531e.js",
+    "runtime-main.js.map": "/react-35-module-2/static/js/runtime-main.c66f531e.js.map",
+    "static/js/2.10ee9d36.chunk.js": "/react-35-module-2/static/js/2.10ee9d36.chunk.js",
+    "static/js/2.10ee9d36.chunk.js.map": "/react-35-module-2/static/js/2.10ee9d36.chunk.js.map",
+    "index.html": "/react-35-module-2/index.html",
+    "static/css/main.11a7c319.chunk.css.map": "/react-35-module-2/static/css/main.11a7c319.chunk.css.map",
+    "static/js/2.10ee9d36.chunk.js.LICENSE.txt": "/react-35-module-2/static/js/2.10ee9d36.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c66f531e.js",
+    "static/js/2.10ee9d36.chunk.js",
+    "static/css/main.11a7c319.chunk.css",
+    "static/js/main.2a36b42e.chunk.js"
+  ]
+}
