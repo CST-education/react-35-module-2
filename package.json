@@ -13,6 +13,7 @@
     "react-flip-toolkit": "^7.0.13-0",
     "react-scripts": "4.0.3",
     "sass": "^1.42.1",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
